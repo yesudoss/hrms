@@ -17,7 +17,8 @@ import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import { GoogleIcon, FacebookIcon, SitemarkIcon } from './CustomIcons';
 import TemplateFrame from './TemplateFrame';
 import getSignUpTheme from '../../theme/getSignUpTheme';
-import ThemeBase from '../../ThemeBase';
+import ThemeBase from '../../theme/ThemeBase';
+
 
 const Card = styled(MuiCard)(({ theme }) => ({
   display: 'flex',
@@ -119,7 +120,7 @@ export default function SignUp() {
       setNameError(false);
       setNameErrorMessage('');
     }
-
+    
     return isValid;
   };
 
