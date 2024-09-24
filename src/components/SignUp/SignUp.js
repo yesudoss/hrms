@@ -15,7 +15,6 @@ import MuiCard from '@mui/material/Card';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 import { GoogleIcon, FacebookIcon, SitemarkIcon } from './CustomIcons';
-import TemplateFrame from './TemplateFrame';
 import getSignUpTheme from '../../theme/getSignUpTheme';
 import ThemeBase from '../../theme/ThemeBase';
 
@@ -136,12 +135,7 @@ export default function SignUp() {
   };
 
   return (
-    <TemplateFrame
-      toggleCustomTheme={toggleCustomTheme}
-      showCustomTheme={showCustomTheme}
-      mode={mode}
-      toggleColorMode={toggleColorMode}
-    >
+    <div>
       {/* <ThemeProvider theme={showCustomTheme ? SignUpTheme : defaultTheme}> */}
       <ThemeBase>
         <CssBaseline enableColorScheme />
@@ -237,7 +231,7 @@ export default function SignUp() {
                   </span>
                 </Typography>
               </Box>
-              <Divider>
+              {/* <Divider>
                 <Typography sx={{ color: 'text.secondary' }}>or</Typography>
               </Divider>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
@@ -259,12 +253,12 @@ export default function SignUp() {
                 >
                   Sign up with Facebook
                 </Button>
-              </Box>
+              </Box> */}
             </Card>
           </Stack>
         </SignUpContainer>
       {/* </ThemeProvider> */}
       </ThemeBase>
-    </TemplateFrame>
+    </div>
   );
 }

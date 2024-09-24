@@ -9,7 +9,7 @@ export default function ThemeBase({ children }) {
   return (
     <ThemeProvider>
       {/* <MenuLandingPage> */}
-        <Container maxWidth="xl" style={{ paddingTop: "4", marginTop: "4rem" }}>
+        <Container maxWidth="xl">
           {children}
         </Container>
       {/* </MenuLandingPage> */}
