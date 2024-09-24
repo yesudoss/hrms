@@ -143,7 +143,7 @@ export default function SignUp() {
           <Stack
             sx={{
               justifyContent: 'center',
-              height: '100dvh',
+              height: '90dvh',
               p: 2,
             }}
           >
@@ -222,7 +222,7 @@ export default function SignUp() {
                   Already have an account?{' '}
                   <span>
                     <Link
-                      href="/material-ui/getting-started/templates/sign-in/"
+                      href="/sign-in"
                       variant="body2"
                       sx={{ alignSelf: 'center' }}
                     >
