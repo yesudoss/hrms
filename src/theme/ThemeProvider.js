@@ -86,7 +86,8 @@ export default function ThemeProvider({ children }) {
       <StyledEngineProvider injectFirst>
         <MUIThemeProvider theme={theme}>
           <CssBaseline />
-          <DarkToggle />
+          {/* This is the dark toggle displayed in top left cornor of the application */}
+          {/* <DarkToggle /> */}
           {/* <GlobalStyles /> */}
           {children}
         </MUIThemeProvider>

@@ -156,6 +156,7 @@ export default function SignIn() {
                 autoFocus
                 required
                 fullWidth
+                value={'admin@test.com'}
                 variant="outlined"
                 color={emailError ? 'error' : 'primary'}
                 sx={{ ariaLabel: 'email' }}
@@ -178,6 +179,7 @@ export default function SignIn() {
                 helperText={passwordErrorMessage}
                 name="password"
                 placeholder="••••••"
+                value='password'
                 type="password"
                 id="password"
                 autoComplete="current-password"
